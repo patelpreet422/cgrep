@@ -1,5 +1,5 @@
 TARGET := cgrep
-HEADERS := `llvm-config --includedir`
+HEADERS := `llvm-config --cxxflags`
 WARNINGS := -Wall -Wextra -pedantic
 CXXFLAGS := $(WARNINGS) -std=c++14 -fno-exceptions -fno-rtti -O3 -Os
 LDFLAGS := `llvm-config --ldflags`
